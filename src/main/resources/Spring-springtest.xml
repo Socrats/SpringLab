@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Spring-Common.xml -->
 <beans xmlns="http://www.springframework.org/schema/beans"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="http://www.springframework.org/schema/beans
-http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
  
-	<bean id="OrderHelperSpring" class="org.agh.edu.springtest.order.OrderHelperSpring">
-		<property name="orderGenerator" ref="PhoneOrderGenerator" />
+	<bean id="A" class="pl.agh.edu.springtest.method3.A">
+		<property name="element" ref="C" />
 	</bean>
  
-	<bean id="PhoneOrderGenerator" class="org.agh.edu.springtest.order.impl.PhoneOrderGenerator" />
-	<bean id="EmailOrderGenerator" class="org.agh.edu.springtest.order.impl.EmailOrderGenerator" />
+	<bean id="B" class="pl.agh.edu.springtest.elements.impl.B" />
+	<bean id="C" class="pl.agh.edu.springtest.elements.impl.C" />
  
 </beans>
